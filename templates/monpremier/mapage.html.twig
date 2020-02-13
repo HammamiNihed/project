@@ -1,0 +1,17 @@
+
+{% extends 'base.html.twig' %}
+{% block body %}
+  <h1>Information</h1>
+  <ul>
+    <li>Mon nom est:{{N}}</li>
+    <li>Mon nom est:{{P}}</li>
+  </ul>  
+      
+  <h1>Mes entiers</h1>
+  <ul>
+    {% for x in t %}
+    <li>{{ x }}</li>
+    {% endfor %}
+  </ul>
+  <a href="{{ path('index') }}">Aller vers index</a>
+  {% endblock %}
